@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhutan 2027 — Trip Plan</title>
+<meta name="description" content="A 2-family, 6-person trip plan for Bhutan, March 2027, built around Paro Tshechu.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏔️</text></svg>">
+<style>
+  :root{
+    --bg:#faf6f0;
+    --bg-alt:#f2ebe0;
+    --paper:#ffffff;
+    --ink:#2b2622;
+    --ink-soft:#5c5349;
+    --ink-faint:#8a8074;
+    --line:#e4d9c8;
+    --accent:#a8451f;
+    --accent-soft:#c96b3f;
+    --accent-bg:#fbeee5;
+    --accent-bg-line:#eecbb3;
+    --good:#3f6b4a;
+    --good-bg:#eaf2ea;
+    --warn:#8a5a12;
+    --warn-bg:#fdf3dd;
+    --warn-line:#f0d99a;
+    --shadow: 0 1px 2px rgba(43,38,34,.04), 0 8px 24px rgba(43,38,34,.06);
+    --radius: 14px;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Noto Serif", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#1c1815;
+      --bg-alt:#221d19;
+      --paper:#242019;
+      --ink:#ece5da;
+      --ink-soft:#c3b8a9;
+      --ink-faint:#8f8474;
+      --line:#3a332a;
+      --accent:#e0854f;
+      --accent-soft:#d9743a;
+      --accent-bg:#3a2a1f;
+      --accent-bg-line:#5a3f2a;
+      --good:#8fc79c;
+      --good-bg:#203024;
+      --warn:#e3b768;
+      --warn-bg:#332a17;
+      --warn-line:#5c4a20;
+      --shadow: 0 1px 2px rgba(0,0,0,.2), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:
+      radial-gradient(1200px 420px at 15% -10%, var(--accent-bg) 0%, transparent 60%),
+      var(--bg-alt);
+    border-bottom:1px solid var(--line);
+    padding:4.5rem 1.5rem 3rem;
+  }
+  .hero-inner{max-width:880px;margin:0 auto;}
+  .eyebrow{
+    font-size:.78rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-weight:700;
+    margin:0 0 .9rem;
+  }
+  h1.title{
+    font-family:var(--serif);
+    font-size:clamp(2.2rem, 5vw, 3.4rem);
+    line-height:1.08;
+    margin:0 0 1rem;
+    letter-spacing:-.01em;
+  }
+  .subtitle{
+    font-size:1.1rem;
+    color:var(--ink-soft);
+    max-width:640px;
+    margin:0 0 2rem;
+  }
+  .stat-row{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(140px,1fr));
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+  }
+  .stat{
+    background:var(--paper);
+    padding:1.1rem 1.2rem;
+  }
+  .stat .k{
+    font-size:.7rem;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    color:var(--ink-faint);
+    margin-bottom:.35rem;
+  }
+  .stat .v{
+    font-family:var(--serif);
+    font-size:1.15rem;
+  }
+
+  /* ---------- Layout ---------- */
+  .wrap{
+    max-width:880px;
+    margin:0 auto;
+    padding:0 1.5rem;
+  }
+  main{padding-bottom:6rem;}
+
+  nav.toc{
+    position:sticky;
+    top:0;
+    z-index:20;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav.toc .toc-scroll{
+    max-width:880px;
+    margin:0 auto;
+    padding:0 1.5rem;
+    display:flex;
+    gap:1.4rem;
+    overflow-x:auto;
+    scrollbar-width:none;
+  }
+  nav.toc .toc-scroll::-webkit-scrollbar{display:none;}
+  nav.toc a{
+    white-space:nowrap;
+    font-size:.85rem;
+    color:var(--ink-soft);
+    text-decoration:none;
+    padding:.9rem 0;
+    border-bottom:2px solid transparent;
+  }
+  nav.toc a:hover{color:var(--accent); border-color:var(--accent-soft);}
+
+  section{
+    padding:3.2rem 0 0;
+    scroll-margin-top:3.2rem;
+  }
+  section:last-of-type{padding-bottom:1rem;}
+
+  .section-num{
+    font-family:var(--serif);
+    font-size:.85rem;
+    color:var(--accent);
+    font-weight:700;
+    letter-spacing:.02em;
+  }
+  h2{
+    font-family:var(--serif);
+    font-size:1.7rem;
+    margin:.3rem 0 1.2rem;
+    letter-spacing:-.01em;
+  }
+  h3{
+    font-family:var(--serif);
+    font-size:1.2rem;
+    margin:1.8rem 0 .7rem;
+  }
+  h3 .day-tag{
+    display:inline-block;
+    font-family:var(--sans);
+    font-size:.68rem;
+    font-weight:700;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--accent);
+    background:var(--accent-bg);
+    border:1px solid var(--accent-bg-line);
+    border-radius:999px;
+    padding:.15rem .6rem;
+    margin-right:.6rem;
+    vertical-align:middle;
+    transform:translateY(-2px);
+  }
+  p{margin:.7rem 0; color:var(--ink);}
+  ul,ol{margin:.6rem 0; padding-left:1.3rem;}
+  li{margin:.35rem 0;}
+  li strong{color:var(--ink);}
+  hr.div{
+    border:none;
+    border-top:1px solid var(--line);
+    margin:3rem 0 0;
+  }
+
+  /* ---------- Callouts ---------- */
+  .callout{
+    border-radius:var(--radius);
+    padding:1rem 1.2rem;
+    margin:1.3rem 0;
+    border:1px solid var(--line);
+    font-size:.95rem;
+  }
+  .callout.warn{background:var(--warn-bg); border-color:var(--warn-line); color:var(--ink);}
+  .callout.warn strong{color:var(--warn);}
+  .callout.note{background:var(--accent-bg); border-color:var(--accent-bg-line);}
+  .callout.note strong{color:var(--accent);}
+  .callout p{margin:.3rem 0;}
+  .callout p:first-child{margin-top:0;}
+  .callout p:last-child{margin-bottom:0;}
+
+  .recommend{
+    display:inline-block;
+    background:var(--good-bg);
+    color:var(--good);
+    border:1px solid color-mix(in srgb, var(--good) 35%, var(--good-bg));
+    border-radius:8px;
+    padding:.85rem 1rem;
+    font-size:.95rem;
+    margin:1rem 0;
+  }
+
+  /* ---------- Tables ---------- */
+  .table-scroll{
+    overflow-x:auto;
+    margin:1.1rem 0;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    background:var(--paper);
+    box-shadow:var(--shadow);
+  }
+  table{
+    border-collapse:collapse;
+    width:100%;
+    font-size:.9rem;
+    min-width:520px;
+  }
+  thead th{
+    text-align:left;
+    background:var(--bg-alt);
+    color:var(--ink-soft);
+    font-size:.72rem;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    font-weight:700;
+    padding:.7rem .9rem;
+    border-bottom:1px solid var(--line);
+    white-space:nowrap;
+  }
+  tbody td{
+    padding:.7rem .9rem;
+    border-bottom:1px solid var(--line);
+    vertical-align:top;
+  }
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:hover{background:var(--bg-alt);}
+  td.num, th.num{text-align:right; font-variant-numeric:tabular-nums;}
+  .total-row td{font-weight:700; background:var(--accent-bg);}
+
+  /* ---------- Day cards ---------- */
+  .day{
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    background:var(--paper);
+    padding:1.3rem 1.4rem;
+    margin:1.2rem 0;
+    box-shadow:var(--shadow);
+  }
+  .day-meta{
+    font-size:.82rem;
+    color:var(--ink-faint);
+    margin-top:-.3rem;
+    margin-bottom:.6rem;
+  }
+  .overnight{
+    display:inline-flex;
+    align-items:center;
+    gap:.4rem;
+    font-size:.82rem;
+    color:var(--ink-soft);
+    margin-top:.8rem;
+    padding-top:.7rem;
+    border-top:1px dashed var(--line);
+  }
+
+  /* ---------- Options grid ---------- */
+  .option-label{
+    font-weight:700;
+    color:var(--accent);
+  }
+
+  /* ---------- Open items ---------- */
+  .checklist{list-style:none; padding-left:0;}
+  .checklist li{
+    display:flex;
+    gap:.7rem;
+    padding:.55rem 0;
+    border-bottom:1px solid var(--line);
+  }
+  .checklist li:last-child{border-bottom:none;}
+  .checklist .box{
+    flex:0 0 auto;
+    width:18px; height:18px;
+    border:1.5px solid var(--ink-faint);
+    border-radius:5px;
+    margin-top:2px;
+  }
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:2.2rem 1.5rem 3rem;
+    text-align:center;
+    color:var(--ink-faint);
+    font-size:.82rem;
+  }
+  code{
+    font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+    background:var(--bg-alt);
+    padding:.1rem .35rem;
+    border-radius:5px;
+    font-size:.88em;
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Family Trip Plan</p>
+    <h1 class="title">Bhutan, March 2027</h1>
+    <p class="subtitle">Two families, six people, from Vadodara — built around Paro Tshechu, the dzongs of the western circuit, and the first breath of spring in the valleys.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="k">Travellers</div><div class="v">6 people · 2 families</div></div>
+      <div class="stat"><div class="k">Dates</div><div class="v">16–23 March 2027</div></div>
+      <div class="stat"><div class="k">Anchor event</div><div class="v">Paro Tshechu</div></div>
+      <div class="stat"><div class="k">Planned</div><div class="v">Aug 2026</div></div>
+    </div>
+  </div>
+</div>
+
+<nav class="toc">
+  <div class="toc-scroll">
+    <a href="#dates">1. Dates</a>
+    <a href="#itinerary">2. Itinerary</a>
+    <a href="#permits">3. Permits &amp; SDF</a>
+    <a href="#getting-there">4. Getting there</a>
+    <a href="#budget">5. Budget</a>
+    <a href="#timeline">6. Booking timeline</a>
+    <a href="#extension">7. Extension</a>
+    <a href="#practical">8. Practical notes</a>
+    <a href="#open-items">9. Open items</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <div class="callout note">
+    <p><strong>Assumptions I made.</strong> I've costed this as 4 adults + 2 children aged 6–12. If the kids are under 6 the SDF drops to zero for them; if 12+, they pay full adult SDF. Everything else scales cleanly.</p>
+  </div>
+
+  <!-- 1. DATES -->
+  <section id="dates">
+    <div class="section-num">01</div>
+    <h2>The date decision — this is the important one</h2>
+    <p>March and April in Bhutan are two different trips, and you can't easily have both in 7 days.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th></th><th>Mid-March</th><th>Mid-April</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Headline event</strong></td><td><strong>Paro Tshechu, 18–22 Mar</strong> — Bhutan's largest and most spectacular festival</td><td>Ura Yakchoe &amp; Domkhar Tshechu (Bumthang) — smaller, more intimate</td></tr>
+          <tr><td><strong>Where</strong></td><td>Western circuit: Paro, Thimphu, Punakha — all within 7 days</td><td>Bumthang is 8–9 hrs further east; realistically needs 10–12 days</td></tr>
+          <tr><td><strong>Rhododendrons</strong></td><td>Just starting at low elevations</td><td>Peak bloom; Rhododendron Festival at Lamperi 22–23 Apr</td></tr>
+          <tr><td><strong>Weather</strong></td><td>Crisp, clear mornings, cold nights (0–5°C)</td><td>Warmer, greener, more afternoon cloud and occasional rain</td></tr>
+          <tr><td><strong>Crowds &amp; prices</strong></td><td>Peak — hotels in Paro book out months ahead</td><td>Moderate</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="recommend">
+      <strong>Recommendation: mid-March, built around Paro Tshechu.</strong> Given you picked festivals <em>and</em> culture <em>and</em> nature, and you only have 7 days, March gives you all three at a level April can't match in the same timeframe. The rhododendrons are the one sacrifice — and you'll still see early blooms on the Dochula–Punakha descent.
+    </div>
+
+    <h3>Festival dates in your window (2027)</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Festival</th><th>Dates</th><th>Location</th><th>Worth it?</th></tr></thead>
+        <tbody>
+          <tr><td>Chorten Kora</td><td>8 Mar</td><td>Trashiyangtse (far east)</td><td>No — 2 days' drive each way</td></tr>
+          <tr><td>Gomphu Kora</td><td>16–18 Mar</td><td>Trashiyangtse (far east)</td><td>No</td></tr>
+          <tr><td><strong>Talo Tshechu</strong></td><td><strong>16–18 Mar</strong></td><td>Talo, Punakha</td><td><strong>Yes — bonus, fits Day 3</strong></td></tr>
+          <tr><td><strong>Paro Tshechu</strong></td><td><strong>18–22 Mar</strong></td><td>Rinpung Dzong, Paro</td><td><strong>Yes — the anchor</strong></td></tr>
+          <tr><td>Rhododendron Week</td><td>3–9 Apr</td><td>Merak, Trashigang (far east)</td><td>No</td></tr>
+          <tr><td>Domkhar Tshechu</td><td>16–18 Apr</td><td>Bumthang</td><td>Only on a 12-day trip</td></tr>
+          <tr><td>Ura Yakchoe</td><td>18–22 Apr</td><td>Bumthang</td><td>Only on a 12-day trip</td></tr>
+          <tr><td>Rhododendron Festival</td><td>22–23 Apr</td><td>Lamperi Botanical Park</td><td>Only if you switch to April</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout warn">
+      <p><strong>All 2027 dates are provisional.</strong> Bhutan sets tshechu dates on a lunar calendar (Paro Tshechu = days 11–15 of the 2nd Bhutanese month). Three Bhutanese operators independently list 18–22 March 2027, and that matches the lunar arithmetic, so it's very likely right — but the official calendar is usually published around <strong>September–October 2026</strong>. Don't buy non-refundable flights until then. One outlier source claims 27–31 March; treat it as wrong unless the official calendar says otherwise.</p>
+    </div>
+
+    <h3>The Thongdrel — plan for this specifically</h3>
+    <p>On the <strong>final day (22 March)</strong>, the giant Guru Thongdrel — a silk appliqué scroll that covers a three-storey building — is carried in procession from Rinpung Dzong to the Deyangkha festival ground and <strong>unfurled at 3:00 AM</strong>, then rolled back up before sunrise. Seeing it is said to grant liberation on sight. It is the single most memorable thing in the whole trip and it happens in the dark, in the cold, before dawn. Budget for a 2:30 AM wake-up, thermals, and a nap afterwards. With kids this is a judgement call, but most families do it and don't regret it.</p>
+  </section>
+
+  <hr class="div">
+
+  <!-- 2. ITINERARY -->
+  <section id="itinerary">
+    <div class="section-num">02</div>
+    <h2>The itinerary — 7 nights, 16–23 March 2027</h2>
+    <p>Drive times below are real, not optimistic. Bhutan's roads are good but slow and winding; kids prone to motion sickness will need medication.</p>
+
+    <div class="day">
+      <h3 style="margin-top:0"><span class="day-tag">Day 0</span>Mon 15 Mar · Vadodara → Delhi</h3>
+      <p>Evening flight BDQ→DEL (~2 hrs). Overnight near IGI Airport. <em>You need this buffer — a same-day connection to a morning Paro flight is not worth the risk.</em></p>
+    </div>
+
+    <div class="day">
+      <h3 style="margin-top:0"><span class="day-tag">Day 1</span>Tue 16 Mar · Delhi → Paro (2,280 m)</h3>
+      <p>Morning Drukair/Bhutan Airlines DEL→PBH, ~2h10m. The descent into Paro is one of the great landings in aviation — get <strong>left-side window seats</strong> for Everest, Kanchenjunga and Jomolhari on a clear morning.</p>
+      <p>Arrive ~11 AM. Deliberately easy afternoon to let everyone adjust to altitude:</p>
+      <ul>
+        <li><strong>Kyichu Lhakhang</strong> — 7th century, one of the oldest temples in Bhutan, tiny and atmospheric</li>
+        <li><strong>Rinpung Dzong</strong> exterior + the traditional cantilever Nyamai Zam bridge</li>
+        <li>Walk Paro's one-street town</li>
+      </ul>
+      <div class="overnight">🌙 Overnight: Paro</div>
+    </div>
+
+    <div class="day">
+      <h3 style="margin-top:0"><span class="day-tag">Day 2</span>Wed 17 Mar · Paro → Thimphu (2,320 m) · 55 km, 1.5 hrs</h3>
+      <ul>
+        <li><strong>Buddha Dordenma</strong> — 51 m gilded bronze Buddha over the valley; huge hit with kids</li>
+        <li><strong>Motithang Takin Preserve</strong> — Bhutan's bizarre national animal, 15 minutes well spent</li>
+        <li><strong>National Memorial Chorten</strong> — the beating heart of Thimphu's daily devotion</li>
+        <li><strong>Simply Bhutan</strong> or the Folk Heritage Museum — hands-on, good for children</li>
+        <li><strong>Craft Bazaar</strong> for shopping; watch the white-gloved policeman directing traffic (Thimphu has no traffic lights)</li>
+      </ul>
+      <div class="overnight">🌙 Overnight: Thimphu</div>
+    </div>
+
+    <div class="day">
+      <h3 style="margin-top:0"><span class="day-tag">Day 3</span>Thu 18 Mar · Thimphu → Dochula → Talo → Punakha (1,250 m) · 75 km, 3 hrs</h3>
+      <ul>
+        <li><strong>Dochula Pass (3,100 m)</strong> — 108 memorial chortens with the eastern Himalaya behind them. Clearest in the morning. Coldest point of the trip.</li>
+        <li><strong>Talo Tshechu, final day</strong> — a village tshechu 45 min above Punakha. Small, uncrowded, mostly locals. A lovely counterweight to the scale of Paro. <em>(Dates provisional — confirm.)</em></li>
+        <li>Descend into the Punakha valley: subtropical, warm, rice terraces. A relief after two cold nights.</li>
+      </ul>
+      <div class="overnight">🌙 Overnight: Punakha</div>
+    </div>
+
+    <div class="day">
+      <h3 style="margin-top:0"><span class="day-tag">Day 4</span>Fri 19 Mar · Punakha</h3>
+      <p>The best single day in western Bhutan.</p>
+      <ul>
+        <li><strong>Punakha Dzong</strong> — at the confluence of the Pho Chhu and Mo Chhu rivers, jacarandas and the finest dzong in the country</li>
+        <li><strong>Chimi Lhakhang</strong> — 20-minute walk through rice fields to the "Divine Madman's" fertility temple (you'll notice the phallus imagery on the houses; worth briefing the kids)</li>
+        <li><strong>Punakha suspension bridge</strong> — 180 m of swaying prayer flags, thrilling and safe</li>
+        <li>Optional: <strong>Khamsum Yulley Namgyal Chorten</strong> — 1 hr uphill, superb valley views</li>
+        <li>Optional: <strong>river rafting</strong> on the Mo Chhu, gentle Grade I–II, suitable for children</li>
+      </ul>
+      <div class="overnight">🌙 Overnight: Punakha</div>
+    </div>
+
+    <div class="day">
+      <h3 style="margin-top:0"><span class="day-tag">Day 5</span>Sat 20 Mar · Punakha → Paro · 125 km, 4.5–5 hrs · Tshechu Day 3</h3>
+      <p>Leave by 7:30 AM. Back over Dochula, past Thimphu, into Paro by early afternoon. Drop bags and go straight to <strong>Rinpung Dzong for the afternoon session</strong> of masked dances. Day 3 is the community day — the courtyard fills with locals in their best kira and gho, and it's the most human of the five days.</p>
+      <div class="overnight">🌙 Overnight: Paro</div>
+    </div>
+
+    <div class="day">
+      <h3 style="margin-top:0"><span class="day-tag">Day 6</span>Sun 21 Mar · Tiger's Nest (3,120 m) <em>or</em> Tshechu Day 4</h3>
+      <p><strong>This is the one real conflict in the itinerary.</strong> Day 4 of the tshechu has the most powerful dances — the Black Hat dance and the Dance of the Lords of the Cremation Grounds. Taktsang takes most of a day.</p>
+      <ul>
+        <li><span class="option-label">Option A (recommended):</span> <strong>Tiger's Nest.</strong> Start 7:00 AM, back by 1:00 PM. 4–5 hrs round trip, ~900 m of climbing. Ponies are available on the uphill leg to the halfway cafeteria only — everyone walks down. Entry Nu 1,000 per adult, half price for ages 6–17. The monastery admits visitors 9 AM–12 noon and 2–5 PM, so an early start gets you inside comfortably. Manageable for fit children over 8; younger ones can turn back at the cafeteria viewpoint, which is itself a fine view of the monastery. Then catch the tail of the afternoon tshechu session if anyone still has legs.</li>
+        <li><span class="option-label">Option B:</span> Full tshechu day, and shift Taktsang to Day 7 morning — but Day 7 starts at 2:30 AM for the Thongdrel, so this is genuinely hard.</li>
+        <li><span class="option-label">Option C:</span> Add two nights (see §7) and stop having to choose.</li>
+      </ul>
+      <div class="overnight">🌙 Overnight: Paro — early night</div>
+    </div>
+
+    <div class="day">
+      <h3 style="margin-top:0"><span class="day-tag">Day 7</span>Mon 22 Mar · Thongdrel at 3 AM · Tshechu final day</h3>
+      <ul>
+        <li><strong>2:30 AM</strong> wake, <strong>3:00 AM</strong> the Guru Thongdrel is unfurled at Deyangkha ground. Rolled up before sunrise.</li>
+        <li>Back to the hotel, breakfast, sleep until midday</li>
+        <li>Afternoon, gentle: <strong>National Museum (Ta Dzong)</strong>, a traditional hot stone bath (book ahead — it's the perfect end to the trip), last shopping</li>
+        <li>Pack</li>
+      </ul>
+      <div class="overnight">🌙 Overnight: Paro</div>
+    </div>
+
+    <div class="day">
+      <h3 style="margin-top:0"><span class="day-tag">Day 8</span>Tue 23 Mar · Paro → Delhi → Vadodara</h3>
+      <p>Morning PBH→DEL, connect to BDQ. Home by evening.</p>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <!-- 3. PERMITS -->
+  <section id="permits">
+    <div class="section-num">03</div>
+    <h2>Permits, SDF and paperwork</h2>
+    <p>You're travelling as <strong>regional tourists</strong>, which is a completely different — and far cheaper — regime than the one you'll read about on most international travel sites.</p>
+    <p><strong>No visa required.</strong> You need an <strong>Entry Permit</strong>.</p>
+
+    <div class="table-scroll">
+      <table>
+        <tbody>
+          <tr><td><strong>SDF, adults</strong></td><td><strong>Nu/₹1,200 per person per night</strong> (vs USD 100 for other nationalities)</td></tr>
+          <tr><td><strong>SDF, children 6–12</strong></td><td>₹600 per night</td></tr>
+          <tr><td><strong>SDF, children under 6</strong></td><td>Free</td></tr>
+          <tr><td><strong>Permit fee</strong></td><td>Free</td></tr>
+          <tr><td><strong>Accepted ID</strong></td><td>Indian passport (6+ months validity) or Voter ID card only. <strong>Aadhaar, PAN and driving licence are NOT accepted.</strong></td></tr>
+          <tr><td><strong>Children under 18</strong></td><td>Birth certificate required</td></tr>
+          <tr><td><strong>Where to apply</strong></td><td>Online at <code>immi.gov.bt</code> (4–5 working days) or on arrival at Paro airport / Phuentsholing</td></tr>
+          <tr><td><strong>Validity</strong></td><td>Up to 15 days, extendable</td></tr>
+          <tr><td><strong>Route permit</strong></td><td>Needed for anywhere beyond Thimphu and Paro — i.e. for Punakha. Your operator handles this; issued in Thimphu, weekdays only</td></tr>
+          <tr><td><strong>Guide</strong></td><td><strong>Mandatory</strong> for Indian tourists, and required for all dzongs and monasteries</td></tr>
+          <tr><td><strong>Hotels</strong></td><td>Must be Department of Tourism–certified properties; booking confirmation is needed before the permit is issued</td></tr>
+          <tr><td><strong>Insurance</strong></td><td>No longer mandatory (dropped April 2024) — but take it anyway</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Do this:</strong> get passports for all six, including the children. Voter ID works for the adults but a passport is smoother at every checkpoint, and the kids need documentation regardless.</p>
+    <p><strong>Carry originals everywhere.</strong> Permits are checked at every checkpost between districts. Photocopies alone will not get you through.</p>
+
+    <div class="callout note">
+      <p><strong>Note on the SDF discount you may read about:</strong> the 50% concession that brings the international rate to USD 100/night runs until 31 August 2027, so March 2027 is inside the window. It doesn't affect you — the ₹1,200 Indian rate is set by a separate bilateral arrangement — but it's the number every article quotes.</p>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <!-- 4. GETTING THERE -->
+  <section id="getting-there">
+    <div class="section-num">04</div>
+    <h2>Getting there — routing from Vadodara</h2>
+    <p>There's no direct anything from Vadodara. Three realistic shapes:</p>
+
+    <h3>Option A — via Delhi ✈️ <em>(recommended)</em></h3>
+    <p>BDQ → DEL → PBH. Drukair flies Delhi–Paro <strong>5× weekly</strong>; Bhutan Airlines also serves the route. ~2h10m on the Paro leg.<br>
+    <strong>~₹30,000–38,000 per person return.</strong> Most comfortable, fewest moving parts, best for kids.</p>
+
+    <h3>Option B — via Kolkata ✈️ <em>(cheapest by air)</em></h3>
+    <p>BDQ → CCU → PBH. Drukair and Bhutan Airlines fly Kolkata–Paro <strong>daily</strong>, only 1h20m.<br>
+    <strong>~₹26,000–32,000 per person return.</strong> Saves roughly ₹30,000 across the group; costs you a longer domestic leg.</p>
+
+    <h3>Option C — overland via Phuentsholing 🚗</h3>
+    <p>Fly to Bagdogra (IXB), road to Jaigaon/Phuentsholing (~4 hrs), then Phuentsholing → Thimphu (~6 hrs of mountain switchbacks).<br>
+    <strong>~₹18,000–24,000 per person</strong> for the flights — genuinely cheaper, and Phuentsholing itself is SDF-free for the first 24 hours. <strong>But it adds a full day each way and 10 hours of winding road with two carsick children.</strong> I'd skip it.</p>
+
+    <p><strong>Baggage:</strong> Drukair economy is generous — 30 kg checked plus 5 kg cabin.</p>
+    <p><strong>Booking:</strong> Drukair releases schedules 3–6 months out, so <strong>March 2027 flights will open around October–December 2026.</strong> Load factors spike for the tshechu.</p>
+  </section>
+
+  <hr class="div">
+
+  <!-- 5. BUDGET -->
+  <section id="budget">
+    <div class="section-num">05</div>
+    <h2>Budget — 6 people, 7 nights</h2>
+    <p>Mid-range: certified 3-star hotels, private 12-seater with driver, licensed guide, most meals.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Line item</th><th>Basis</th><th class="num">Group total (₹)</th></tr></thead>
+        <tbody>
+          <tr><td>International + domestic flights</td><td>via Delhi, 6 pax</td><td class="num">1,80,000 – 2,28,000</td></tr>
+          <tr><td><strong>SDF</strong></td><td>4 adults × ₹1,200 × 7 + 2 kids × ₹600 × 7</td><td class="num"><strong>42,000</strong></td></tr>
+          <tr><td>Hotels</td><td>2 triple rooms × 7 nights @ ₹5,000–7,000</td><td class="num">70,000 – 98,000</td></tr>
+          <tr><td>Vehicle + driver + fuel</td><td>Toyota Hiace/Coaster, 8 days @ ₹6,000–8,000</td><td class="num">48,000 – 64,000</td></tr>
+          <tr><td>Licensed guide</td><td>8 days @ ₹1,500–2,500</td><td class="num">12,000 – 20,000</td></tr>
+          <tr><td>Meals</td><td>₹800–1,200 pp/day (many hotels include B&amp;D)</td><td class="num">38,000 – 58,000</td></tr>
+          <tr><td>Entry fees</td><td>Taktsang Nu 1,000 pp (kids 6–17 half), museums, dzongs</td><td class="num">8,000 – 12,000</td></tr>
+          <tr><td>Hot stone bath, rafting, ponies</td><td>optional extras</td><td class="num">12,000 – 20,000</td></tr>
+          <tr><td>5% GST on tour services</td><td>hotels + guide + vehicle, from Jan 2026</td><td class="num">6,500 – 9,000</td></tr>
+          <tr><td>Shopping &amp; contingency</td><td></td><td class="num">25,000 – 40,000</td></tr>
+          <tr class="total-row"><td>TOTAL</td><td></td><td class="num">₹4,41,500 – 5,91,000</td></tr>
+          <tr class="total-row"><td>Per person</td><td></td><td class="num">₹74,000 – 98,500</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Levers if you want to bring this down</h3>
+    <ul>
+      <li>Route via <strong>Kolkata</strong> instead of Delhi → saves ~₹30,000 group</li>
+      <li>Simpler certified guesthouses instead of 3-star → saves ~₹25,000 group</li>
+      <li>Drop one Punakha night → saves ₹7,200 SDF + a room night</li>
+      <li>Skip the hot stone bath / rafting extras → saves ~₹15,000 group</li>
+    </ul>
+
+    <h3>Money — read this bit properly</h3>
+    <p>The Ngultrum is pegged 1:1 to the Rupee, so there's no exchange to worry about. But:</p>
+    <ul>
+      <li><strong>₹100 and ₹200 notes are what you want.</strong> ₹500 notes are frequently refused outside the big hotels. Break your cash <em>before</em> you leave India.</li>
+      <li><strong>Do not count on UPI or cards.</strong> Card acceptance is limited to upscale hotels and shops, usually with a 2–3% surcharge. ATMs exist in Paro and Thimphu but fail often on connectivity.</li>
+      <li>Carry <strong>₹15,000–20,000 per person in cash</strong> for meals, entry fees, tips and shopping outside the package.</li>
+      <li><strong>A 5% GST on tour services</strong> (hotels, guide, transport) came in from January 2026 — make sure operator quotes are inclusive, not "plus taxes".</li>
+    </ul>
+  </section>
+
+  <hr class="div">
+
+  <!-- 6. TIMELINE -->
+  <section id="timeline">
+    <div class="section-num">06</div>
+    <h2>Booking timeline</h2>
+    <p>You have good runway. Here's the order of operations:</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>When</th><th>Do this</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Now (Aug–Sep 2026)</strong></td><td>Passports for all six, including the children. Shortlist 3–4 licensed Bhutanese operators and get quotes for 16–23 March 2027</td></tr>
+          <tr><td><strong>Sep–Oct 2026</strong></td><td><strong>Official 2027 festival calendar publishes.</strong> Confirm the Paro Tshechu dates before committing to anything non-refundable</td></tr>
+          <tr><td><strong>Oct–Nov 2026</strong></td><td><strong>Book Paro hotels.</strong> This is the binding constraint — Paro has limited certified rooms and they fill 4–6 months ahead for the tshechu. Book Thimphu and Punakha at the same time</td></tr>
+          <tr><td><strong>Nov 2026 – Jan 2027</strong></td><td>Book Drukair Delhi–Paro as soon as the schedule loads. Book BDQ–DEL domestic legs</td></tr>
+          <tr><td><strong>Jan 2027</strong></td><td>Confirm operator, guide, vehicle. Pay deposits</td></tr>
+          <tr><td><strong>Feb 2027</strong></td><td>Apply for Entry Permits via the operator or immi.gov.bt. Travel insurance. Any kid-specific meds</td></tr>
+          <tr><td><strong>Early Mar 2027</strong></td><td>Re-confirm festival dates and flight times. Print all permits and bookings</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <!-- 7. EXTENSION -->
+  <section id="extension">
+    <div class="section-num">07</div>
+    <h2>Worth considering: add two nights</h2>
+    <p>If you can stretch to <strong>9 nights (16–25 March)</strong>, two things get materially better:</p>
+    <ol>
+      <li><strong>The Day 6 conflict disappears</strong> — Tiger's Nest and the full Tshechu Day 4 both fit.</li>
+      <li><strong>Phobjikha valley</strong> slots in: a glacial U-shaped valley at 3,000 m, the Gangtey Nature Trail (an easy 1.5 hr walk, excellent with kids), Gangtey Goenpa monastery, and the black-necked crane centre. The cranes have usually left for Tibet by mid-March, but the valley is the most beautiful landscape in western Bhutan regardless.</li>
+    </ol>
+    <div class="recommend">Cost of the extension: roughly <strong>₹12,000 SDF + ₹30,000–40,000 everything else</strong> for the group. It's the best value-per-rupee decision available in this plan.</div>
+  </section>
+
+  <hr class="div">
+
+  <!-- 8. PRACTICAL -->
+  <section id="practical">
+    <div class="section-num">08</div>
+    <h2>Practical notes</h2>
+
+    <h3>Weather, mid-March</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Place</th><th>Altitude</th><th>Day</th><th>Night</th></tr></thead>
+        <tbody>
+          <tr><td>Paro</td><td>2,280 m</td><td>13–17°C</td><td>0–4°C</td></tr>
+          <tr><td>Thimphu</td><td>2,320 m</td><td>14–18°C</td><td>2–5°C</td></tr>
+          <tr><td>Dochula Pass</td><td>3,100 m</td><td>5–10°C</td><td>below freezing</td></tr>
+          <tr><td>Punakha</td><td>1,250 m</td><td>20–25°C</td><td>10–13°C</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Mornings are clear, afternoons often cloud over. Occasional rain by late March.</p>
+
+    <h3>Altitude</h3>
+    <p>You're going from sea level to 2,280 m in two hours. Nothing here is dangerous — Bhutan's western circuit sits well below altitude-sickness territory — but Day 1 is deliberately light for a reason. Drink far more water than feels necessary, skip alcohol the first night, and watch the kids for headaches and poor appetite.</p>
+
+    <h3>Packing that actually matters</h3>
+    <ul>
+      <li>Layers, not bulk: thermals + fleece + windproof shell. The 3 AM Thongdrel is genuinely cold.</li>
+      <li>Broken-in walking shoes for Taktsang. Not new ones.</li>
+      <li><strong>Long trousers and sleeves for all dzongs and temples</strong> — this is enforced, not advisory. No shorts, no sleeveless, hats off, shoes off inside.</li>
+      <li>Sunscreen and sunglasses — the high-altitude sun is fierce even at 14°C</li>
+      <li>Motion-sickness medication. Non-negotiable on the Thimphu–Punakha and Punakha–Paro legs.</li>
+      <li>Power bank; charging points are scarce at festival grounds</li>
+      <li>Basic medical kit: paediatric paracetamol, ORS, antiseptic, any regular prescriptions</li>
+    </ul>
+
+    <h3>Etiquette at the tshechu</h3>
+    <ul>
+      <li>Arrive early — by 8 AM for good ground positions in the Rinpung Dzong courtyard</li>
+      <li>Photography of the dances is fine; photography <strong>inside</strong> temples and of altars is not</li>
+      <li>Don't cross in front of dancers or step into the performance circle</li>
+      <li>Locals dress in their finest; smart-casual and modest is the right register for visitors</li>
+      <li>Walk clockwise around chortens, mani walls and temples</li>
+    </ul>
+
+    <h3>Two things people forget</h3>
+    <ul>
+      <li><strong>Tobacco is heavily restricted</strong> in Bhutan. Don't carry cigarettes in quantity.</li>
+      <li>Bhutan is <strong>carbon-negative and plastic-conscious</strong>. Carry refillable water bottles; single-use plastic is discouraged and in places banned.</li>
+    </ul>
+  </section>
+
+  <hr class="div">
+
+  <!-- 9. OPEN ITEMS -->
+  <section id="open-items">
+    <div class="section-num">09</div>
+    <h2>Open items</h2>
+    <ul class="checklist">
+      <li><span class="box"></span><span>Confirm Paro Tshechu dates against the official calendar (Sep–Oct 2026)</span></li>
+      <li><span class="box"></span><span>Confirm Talo Tshechu dates — single-source at present</span></li>
+      <li><span class="box"></span><span>Decide: 7 nights or the 9-night version with Phobjikha</span></li>
+      <li><span class="box"></span><span>Decide: Delhi routing or Kolkata routing</span></li>
+      <li><span class="box"></span><span>Confirm exact ages of the children — changes SDF and whether Taktsang is realistic for them</span></li>
+      <li><span class="box"></span><span>Get 3–4 operator quotes and compare what's actually included</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  Compiled August 2026. All 2027 festival dates are provisional pending Bhutan's official lunar calendar. Costs are August 2026 estimates and will drift.
+  <br><br>
+  <a href="https://github.com/travel-bucket-list/bhutan-2027">View source on GitHub</a>
+</footer>
+
+</body>
+</html>
