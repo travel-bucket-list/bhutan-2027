@@ -1,13 +1,15 @@
 # Bhutan 2027 — Trip Plan
 **Travellers:** 2 families, 6 people total, from Vadodara
 - **Bhavin (40)** · **Sunita (39)** · **Ekansh (5)**
-- **Pradeep (40)** · **Anandita (38)** · **Tutun (11)**
+- **Pradeep (40)** · **Anandita (38)** · **Anupriya "Tutun" (11)**
 
 **Window:** March–April 2027 → **recommended dates: 16–25 March 2027 (9 nights)**
 **Focus:** Paro Tshechu · dzongs & monasteries · spring valleys — kept **budget-friendly**
 **Planned:** August 2026 (7 months of lead time — comfortable)
 
-> **Ages matter here, and they're locked in.** Ekansh is 5, so he's **SDF-free** — a real saving. Tutun is 11, so he pays the child SDF rate (₹600/night) until he turns 13. That's ₹1,200/night saved right there versus costing him as a second full adult. Ekansh's age is also why Tiger's Nest is flagged as optional for him (below) rather than assumed.
+> **Ages matter here, and they're locked in.** Ekansh is 5, so he's **SDF-free** — a real saving. Tutun is 11, so she pays the child SDF rate (₹600/night) until she turns 13. That's ₹1,200/night saved right there versus costing her as a second full adult. Ekansh's age is also why Tiger's Nest is flagged as optional for him (below) rather than assumed.
+>
+> **Note on names:** "Tutun" is used throughout this plan since that's the working name for the trip, but her passport, Entry Permit and birth certificate will all be under her legal name, **Anupriya**. Make sure operator bookings and permit applications use Anupriya, not Tutun.
 
 ---
 
@@ -43,6 +45,24 @@ March and April in Bhutan are two different trips.
 ### The Thongdrel — plan for this specifically
 
 On the **final day (22 March)**, the giant Guru Thongdrel — a silk appliqué scroll that covers a three-storey building — is carried in procession from Rinpung Dzong to the Deyangkha festival ground and **unfurled at 3:00 AM**, then rolled back up before sunrise. Seeing it is said to grant liberation on sight. It is the single most memorable thing in the whole trip and it happens in the dark, in the cold, before dawn. Budget for a 2:30 AM wake-up, thermals, and a nap afterwards. With Ekansh at 5, one parent carrying/wrapping him and being ready to head back early is the sensible plan; Tutun at 11 will be fine for the whole thing.
+
+### Does it clash with Anupriya's school calendar?
+
+Anupriya's school (2026–27 academic year, general "plains city" schedule — confirm against her actual school's calendar, not assumed here):
+
+| Break | Dates | Length |
+|---|---|---|
+| Summer Vacation | 8 May – 16 Jun 2026 | 40 days |
+| Autumn Break | 15–24 Oct 2026 | 10 days |
+| Winter Break | Late Dec 2026 – early Jan 2027 | ~10 days |
+
+⚠️ **None of these line up with 16–25 March 2027.** On this general pattern, the current dates fall in school term — roughly 8 school days (16–19, 22–25 Mar are weekdays) would need to be taken as leave. Worth confirming directly with her school before booking anything non-refundable; some schools grant travel leave for a documented family trip without much friction, others don't.
+
+If staying inside an actual break matters more than the specific March dates:
+- **Winter Break (late Dec 2026 – early Jan 2027)** lines up on paper, but it's the coldest window of the year in Bhutan — the worst possible timing given Ekansh's airway history. Not recommended.
+- **Autumn Break (15–24 Oct 2026)** is almost exactly this itinerary's length, and October is independently one of the two best weather windows in Bhutan — mild nights, clear skies, no cold-air risk for Ekansh (see the weather guide). No major festival anchors October, so it would trade Paro Tshechu for a scenery-and-comfort trip. The timeline is also tight: Oct 2026 is only about two months out from now, which is workable for flights and passports but leaves no slack.
+
+This is a real trade-off between "no missed school" and "the festival," not an obvious call — flagged in Open Items below rather than decided here.
 
 ---
 
@@ -322,6 +342,8 @@ Mornings are clear, afternoons often cloud over. Occasional rain by late March. 
 - [ ] Get 3–4 operator quotes, specifying budget-tier certified hotels including in Phobjikha, and compare what's actually included
 - [ ] Decide who takes Ekansh at Tiger's Nest (turn back at the cafeteria, or sit the day out) once you're closer to the date and know his energy levels
 - [ ] Book the hot stone bath in advance for Day 9 if keeping it in
+- [ ] **Confirm Anupriya's actual school holiday calendar and whether 16–25 March 2027 needs leave** — the general schedule used in §1 shows no break covering these dates; decide whether to request school leave, or shift to a real break window (Autumn Break, 15–24 Oct 2026, is the strongest alternative on both weather and holiday grounds — see §1)
+- [ ] Make sure all bookings and permit applications use Anupriya's legal name, not "Tutun"
 
 ---
 
