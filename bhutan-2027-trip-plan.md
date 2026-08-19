@@ -249,7 +249,36 @@ Net effect on cost: because Phobjikha is cheap and the routing/hotel choices in 
 
 ## 8. Practical notes
 
-**Weather, mid-to-late March**
+**Weather across the year** — for context on why March was picked, and useful if dates shift
+
+| Month | Thimphu | Paro | Punakha | Overall feel |
+|---|---|---|---|---|
+| Jan | 0–12°C | -2–12°C | 5–18°C | ❄️ Cold, dry |
+| Feb | 2–14°C | 0–14°C | 7–20°C | 🧥 Cool, pleasant |
+| **Mar** | **5–18°C** | **4–18°C** | **11–24°C** | **🌸 Excellent** |
+| Apr | 9–21°C | 8–22°C | 15–27°C | 🌸 Warm days |
+| May | 13–24°C | 12–24°C | 19–30°C | ☀️ Warm, pre-monsoon |
+| Jun | 16–25°C | 15–25°C | 21–31°C | 🌧️ Warm + monsoon begins |
+| Jul | 17–25°C | 16–25°C | 22–32°C | 🌧️ Wet |
+| Aug | 17–25°C | 16–25°C | 22–31°C | 🌧️ Wet |
+| Sep | 15–24°C | 14–24°C | 20–29°C | 🌦️ Wet → clearing |
+| Oct | 10–22°C | 9–22°C | 15–27°C | ⭐ Excellent |
+| Nov | 4–17°C | 3–17°C | 9–22°C | 🍂 Crisp |
+| Dec | 1–13°C | -1–13°C | 6–19°C | ❄️ Cold, dry |
+
+March and October are the two best weather windows in Bhutan; March has the added pull of Paro Tshechu, which is why it wins here. June–September is the monsoon and worth avoiding with young kids — wet trails, leeches at lower elevations, and flight delays into Paro's tricky approach.
+
+**Weather, mid-to-late March** — your actual trip dates, at the finer place-level granularity that matters for packing
+
+| Place | Altitude | Day | Night |
+|---|---|---|---|
+| Paro | 2,280 m | 13–17°C | 0–4°C |
+| Thimphu | 2,320 m | 14–18°C | 2–5°C |
+| Dochula Pass | 3,100 m | 5–10°C | below freezing |
+| Punakha | 1,250 m | 20–25°C | 10–13°C |
+| Phobjikha | 3,000 m | 8–13°C | below freezing to 2°C |
+
+Note these two tables use different sources/methodologies (monthly averages vs. trip-specific place forecasts), which is why the March row above and the Paro/Thimphu rows below don't line up exactly — both are directionally right; trust the second, more granular one for packing.
 
 | Place | Altitude | Day | Night |
 |---|---|---|---|
