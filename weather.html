@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhutan Weather — Month by Month</title>
+<meta name="description" content="Month-by-month climate for Thimphu, Paro and Punakha, plus the trip-specific March forecast for the Bhutan 2027 family trip.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌦️</text></svg>">
+<style>
+  :root{
+    --bg:#faf6f0;
+    --bg-alt:#f2ebe0;
+    --paper:#ffffff;
+    --ink:#2b2622;
+    --ink-soft:#5c5349;
+    --ink-faint:#8a8074;
+    --line:#e4d9c8;
+    --accent:#a8451f;
+    --accent-soft:#c96b3f;
+    --accent-bg:#fbeee5;
+    --accent-bg-line:#eecbb3;
+    --good:#3f6b4a;
+    --good-bg:#eaf2ea;
+    --warn:#8a5a12;
+    --warn-bg:#fdf3dd;
+    --warn-line:#f0d99a;
+    --shadow: 0 1px 2px rgba(43,38,34,.04), 0 8px 24px rgba(43,38,34,.06);
+    --radius: 14px;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Noto Serif", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#1c1815;
+      --bg-alt:#221d19;
+      --paper:#242019;
+      --ink:#ece5da;
+      --ink-soft:#c3b8a9;
+      --ink-faint:#8f8474;
+      --line:#3a332a;
+      --accent:#e0854f;
+      --accent-soft:#d9743a;
+      --accent-bg:#3a2a1f;
+      --accent-bg-line:#5a3f2a;
+      --good:#8fc79c;
+      --good-bg:#203024;
+      --warn:#e3b768;
+      --warn-bg:#332a17;
+      --warn-line:#5c4a20;
+      --shadow: 0 1px 2px rgba(0,0,0,.2), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--sans);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:
+      radial-gradient(1200px 420px at 15% -10%, var(--accent-bg) 0%, transparent 60%),
+      var(--bg-alt);
+    border-bottom:1px solid var(--line);
+    padding:4.5rem 1.5rem 3rem;
+  }
+  .hero-inner{max-width:880px;margin:0 auto;}
+  .back-link{
+    display:inline-flex;
+    align-items:center;
+    gap:.4rem;
+    font-size:.85rem;
+    font-weight:600;
+    color:var(--ink-soft);
+    text-decoration:none;
+    margin-bottom:1.4rem;
+  }
+  .back-link:hover{color:var(--accent);}
+  .eyebrow{
+    font-size:.78rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-weight:700;
+    margin:0 0 .9rem;
+  }
+  h1.title{
+    font-family:var(--serif);
+    font-size:clamp(2.2rem, 5vw, 3.4rem);
+    line-height:1.08;
+    margin:0 0 1rem;
+    letter-spacing:-.01em;
+  }
+  .subtitle{
+    font-size:1.1rem;
+    color:var(--ink-soft);
+    max-width:640px;
+    margin:0 0 2rem;
+  }
+  .stat-row{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(140px,1fr));
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+  }
+  .stat{
+    background:var(--paper);
+    padding:1.1rem 1.2rem;
+  }
+  .stat .k{
+    font-size:.7rem;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+    color:var(--ink-faint);
+    margin-bottom:.35rem;
+  }
+  .stat .v{
+    font-family:var(--serif);
+    font-size:1.15rem;
+  }
+
+  /* ---------- Layout ---------- */
+  .wrap{
+    max-width:880px;
+    margin:0 auto;
+    padding:0 1.5rem;
+  }
+  main{padding-bottom:6rem;}
+
+  section{
+    padding:3.2rem 0 0;
+    scroll-margin-top:1.2rem;
+  }
+  section:last-of-type{padding-bottom:1rem;}
+
+  .section-num{
+    font-family:var(--serif);
+    font-size:.85rem;
+    color:var(--accent);
+    font-weight:700;
+    letter-spacing:.02em;
+  }
+  h2{
+    font-family:var(--serif);
+    font-size:1.7rem;
+    margin:.3rem 0 1.2rem;
+    letter-spacing:-.01em;
+  }
+  h3{
+    font-family:var(--serif);
+    font-size:1.2rem;
+    margin:1.8rem 0 .7rem;
+  }
+  p{margin:.7rem 0; color:var(--ink);}
+  ul,ol{margin:.6rem 0; padding-left:1.3rem;}
+  li{margin:.35rem 0;}
+  li strong{color:var(--ink);}
+  hr.div{
+    border:none;
+    border-top:1px solid var(--line);
+    margin:3rem 0 0;
+  }
+
+  /* ---------- Callouts ---------- */
+  .callout{
+    border-radius:var(--radius);
+    padding:1rem 1.2rem;
+    margin:1.3rem 0;
+    border:1px solid var(--line);
+    font-size:.95rem;
+  }
+  .callout.warn{background:var(--warn-bg); border-color:var(--warn-line); color:var(--ink);}
+  .callout.warn strong{color:var(--warn);}
+  .callout.note{background:var(--accent-bg); border-color:var(--accent-bg-line);}
+  .callout.note strong{color:var(--accent);}
+  .callout p{margin:.3rem 0;}
+  .callout p:first-child{margin-top:0;}
+  .callout p:last-child{margin-bottom:0;}
+
+  .recommend{
+    display:inline-block;
+    background:var(--good-bg);
+    color:var(--good);
+    border:1px solid color-mix(in srgb, var(--good) 35%, var(--good-bg));
+    border-radius:8px;
+    padding:.85rem 1rem;
+    font-size:.95rem;
+    margin:1rem 0;
+  }
+
+  /* ---------- Tables ---------- */
+  .table-scroll{
+    overflow-x:auto;
+    margin:1.1rem 0;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    background:var(--paper);
+    box-shadow:var(--shadow);
+  }
+  table{
+    border-collapse:collapse;
+    width:100%;
+    font-size:.9rem;
+    min-width:520px;
+  }
+  thead th{
+    text-align:left;
+    background:var(--bg-alt);
+    color:var(--ink-soft);
+    font-size:.72rem;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    font-weight:700;
+    padding:.7rem .9rem;
+    border-bottom:1px solid var(--line);
+    white-space:nowrap;
+  }
+  tbody td{
+    padding:.7rem .9rem;
+    border-bottom:1px solid var(--line);
+    vertical-align:top;
+  }
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:hover{background:var(--bg-alt);}
+  td.num, th.num{text-align:right; font-variant-numeric:tabular-nums;}
+  .row-highlight td{font-weight:700; background:var(--accent-bg);}
+
+  /* ---------- Month cards ---------- */
+  .month-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(150px,1fr));
+    gap:.8rem;
+    margin:1.2rem 0;
+  }
+  .month-card{
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:var(--paper);
+    padding:.9rem 1rem;
+    box-shadow:var(--shadow);
+  }
+  .month-card.pick{
+    border-color:var(--accent-soft);
+    background:var(--accent-bg);
+  }
+  .month-card .m{
+    font-family:var(--serif);
+    font-size:1.05rem;
+    margin-bottom:.3rem;
+  }
+  .month-card .f{
+    font-size:.82rem;
+    color:var(--ink-soft);
+  }
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:2.2rem 1.5rem 3rem;
+    text-align:center;
+    color:var(--ink-faint);
+    font-size:.82rem;
+  }
+  code{
+    font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+    background:var(--bg-alt);
+    padding:.1rem .35rem;
+    border-radius:5px;
+    font-size:.88em;
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <a class="back-link" href="index.html">← Back to the trip plan</a>
+    <p class="eyebrow">Bhutan 2027 · Reference</p>
+    <h1 class="title">Weather, month by month</h1>
+    <p class="subtitle">Climate across Thimphu, Paro and Punakha for every month of the year, plus the finer-grained forecast for the actual trip dates — 16–25 March 2027.</p>
+    <div class="stat-row">
+      <div class="stat"><div class="k">Best months</div><div class="v">March &amp; October</div></div>
+      <div class="stat"><div class="k">Trip month</div><div class="v">March 2027</div></div>
+      <div class="stat"><div class="k">Avoid</div><div class="v">Jun–Sep (monsoon)</div></div>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <!-- FULL YEAR TABLE -->
+  <section id="year">
+    <div class="section-num">01</div>
+    <h2>Full-year comparison</h2>
+    <p>Monthly average day/night ranges for the three towns on the western circuit. The highlighted row is the trip month.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Month</th><th>Thimphu</th><th>Paro</th><th>Punakha</th><th>Overall feel</th></tr></thead>
+        <tbody>
+          <tr><td>Jan</td><td>0–12°C</td><td>-2–12°C</td><td>5–18°C</td><td>❄️ Cold, dry</td></tr>
+          <tr><td>Feb</td><td>2–14°C</td><td>0–14°C</td><td>7–20°C</td><td>🧥 Cool, pleasant</td></tr>
+          <tr class="row-highlight"><td>Mar</td><td>5–18°C</td><td>4–18°C</td><td>11–24°C</td><td>🌸 Excellent</td></tr>
+          <tr><td>Apr</td><td>9–21°C</td><td>8–22°C</td><td>15–27°C</td><td>🌸 Warm days</td></tr>
+          <tr><td>May</td><td>13–24°C</td><td>12–24°C</td><td>19–30°C</td><td>☀️ Warm, pre-monsoon</td></tr>
+          <tr><td>Jun</td><td>16–25°C</td><td>15–25°C</td><td>21–31°C</td><td>🌧️ Warm + monsoon begins</td></tr>
+          <tr><td>Jul</td><td>17–25°C</td><td>16–25°C</td><td>22–32°C</td><td>🌧️ Wet</td></tr>
+          <tr><td>Aug</td><td>17–25°C</td><td>16–25°C</td><td>22–31°C</td><td>🌧️ Wet</td></tr>
+          <tr><td>Sep</td><td>15–24°C</td><td>14–24°C</td><td>20–29°C</td><td>🌦️ Wet → clearing</td></tr>
+          <tr><td>Oct</td><td>10–22°C</td><td>9–22°C</td><td>15–27°C</td><td>⭐ Excellent</td></tr>
+          <tr><td>Nov</td><td>4–17°C</td><td>3–17°C</td><td>9–22°C</td><td>🍂 Crisp</td></tr>
+          <tr><td>Dec</td><td>1–13°C</td><td>-1–13°C</td><td>6–19°C</td><td>❄️ Cold, dry</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="recommend"><strong>March and October are the two best weather windows in Bhutan.</strong> March also carries Paro Tshechu, which is why it wins for this trip over an otherwise-comparable October.</div>
+
+    <div class="callout warn">
+      <p><strong>June–September is the monsoon — worth avoiding with young kids.</strong> Wet trails and slippery dzong courtyards, leeches at lower elevations like Punakha, and monsoon cloud cover that regularly delays or cancels flights into Paro's visual, mountain-ringed approach (there's no instrument landing for the full descent). If dates ever have to shift off March, October is the only real substitute.</p>
+    </div>
+
+    <h3>At a glance, by season</h3>
+    <div class="month-grid">
+      <div class="month-card"><div class="m">Dec – Feb</div><div class="f">❄️ Cold and dry. Clear skies, freezing nights, thin winter crowds. Doable with kids if they run warm, but the least comfortable window.</div></div>
+      <div class="month-card pick"><div class="m">Mar – Apr</div><div class="f">🌸 Spring. Rhododendrons, festivals (Paro Tshechu in March), warming days, cold nights. The best all-round window — this trip's pick.</div></div>
+      <div class="month-card"><div class="m">May</div><div class="f">☀️ Warm and mostly dry, the last window before monsoon. A good fallback if March doesn't work.</div></div>
+      <div class="month-card"><div class="m">Jun – Sep</div><div class="f">🌧️ Monsoon. Wettest, greenest, and least reliable for flights and mountain roads. Avoid with young children.</div></div>
+      <div class="month-card pick"><div class="m">Oct – Nov</div><div class="f">⭐ Post-monsoon. Clearest skies of the year, crisp air, excellent mountain visibility. The other top-tier window, no major festival to anchor it though.</div></div>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <!-- TRIP-SPECIFIC TABLE -->
+  <section id="trip-dates">
+    <div class="section-num">02</div>
+    <h2>Your actual trip dates — mid-to-late March</h2>
+    <p>The table above is monthly averages; this one is place-specific for 16–25 March 2027, including the two extra stops this itinerary adds — Dochula Pass and Phobjikha — at the finer granularity that actually matters for packing.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Place</th><th>Altitude</th><th>Day</th><th>Night</th></tr></thead>
+        <tbody>
+          <tr><td>Paro</td><td>2,280 m</td><td>13–17°C</td><td>0–4°C</td></tr>
+          <tr><td>Thimphu</td><td>2,320 m</td><td>14–18°C</td><td>2–5°C</td></tr>
+          <tr><td>Dochula Pass</td><td>3,100 m</td><td>5–10°C</td><td>below freezing</td></tr>
+          <tr><td>Punakha</td><td>1,250 m</td><td>20–25°C</td><td>10–13°C</td></tr>
+          <tr><td>Phobjikha</td><td>3,000 m</td><td>8–13°C</td><td>below freezing to 2°C</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Mornings are clear, afternoons often cloud over. Occasional rain by late March. Phobjikha is colder than Paro after dark — pack for it specifically.</p>
+
+    <div class="callout note">
+      <p><strong>Why the numbers don't quite match the table above.</strong> The full-year table is monthly averages sourced generically per town; this one is a trip-specific forecast down to the individual stop, including two places (Dochula, Phobjikha) the monthly table doesn't cover at all. Both are directionally right — trust this second, more granular table for what to actually pack.</p>
+    </div>
+
+    <h3>What this means for packing</h3>
+    <ul>
+      <li>Layers, not bulk: thermals + fleece + windproof shell. The 3 AM Thongdrel and the Phobjikha night are both genuinely cold.</li>
+      <li>Sunscreen and sunglasses — the high-altitude sun is fierce even at 14°C.</li>
+      <li>Warmest kit gets used at Dochula Pass and in Phobjikha, not in Paro town itself.</li>
+      <li>Punakha is a genuine relief — pack one lighter layer for the two nights there.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  Compiled August 2026. Costs and climate figures are estimates and will drift.
+  <br><br>
+  <a href="index.html">← Back to the Bhutan 2027 trip plan</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/travel-bucket-list/bhutan-2027">View source on GitHub</a>
+</footer>
+
+</body>
+</html>
