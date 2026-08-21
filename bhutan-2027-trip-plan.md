@@ -1,7 +1,7 @@
 # Bhutan 2027 — Trip Plan
-**Travellers:** 2 families, 6 people total, from Vadodara
-- **Bhavin (40)** · **Sunita (39)** · **Ekansh (5)**
-- **Pradeep (40)** · **Anandita (38)** · **Anupriya "Tutun" (11)**
+**Travellers:** 2 families, 6 people total, from two different cities
+- **Bhavin (40)** · **Sunita (39)** · **Ekansh (5)** — from Vadodara
+- **Pradeep (40)** · **Anandita (38)** · **Anupriya "Tutun" (11)** — from Kolkata
 
 **Window:** March–April 2027 → **recommended dates: 16–25 March 2027 (9 nights)**
 **Focus:** Paro Tshechu · dzongs & monasteries · spring valleys — kept **budget-friendly**
@@ -70,11 +70,11 @@ This is a real trade-off between "no missed school" and "the festival," not an o
 
 Nine nights (up from a bare-minimum 7) buys you two things without adding cost anywhere near proportionally: **Phobjikha valley** slots in, and the old Day 6 headache — Tiger's Nest *or* the tshechu's best dance day, pick one — disappears because each now gets its own day. Drive times below are real, not optimistic. Bhutan's roads are good but slow and winding; carry motion-sickness medication for both kids.
 
-### Day 0 — Mon 15 Mar · Vadodara → Delhi
-Evening flight BDQ→DEL (~2 hrs). Overnight near IGI Airport — a **budget airport hotel or retiring room**, not a full-service one; you'll be there under 12 hours. *You need this buffer — a same-day connection to a morning Paro flight is not worth the risk.*
+### Day 0 — Mon 15 Mar · Bhavin's family: Vadodara → Kolkata
+Evening flight BDQ→CCU (~2 hrs). Overnight near CCU airport — a **budget airport hotel**, not a full-service one; you'll be there under 12 hours. *You need this buffer — a same-day connection to a morning Paro flight is not worth the risk.* Meanwhile, Pradeep's family begins their own route this evening — the overnight train from Kolkata to New Jalpaiguri (see §4).
 
-### Day 1 — Tue 16 Mar · Delhi/Kolkata → Paro (2,280 m)
-Morning Drukair/Bhutan Airlines flight to PBH (see §4 for routing). The descent into Paro is one of the great landings in aviation — get **left-side window seats** for Everest, Kanchenjunga and Jomolhari on a clear morning; Tutun is old enough to really appreciate this.
+### Day 1 — Tue 16 Mar · Two routes converge in Paro (2,280 m)
+Morning Drukair/Bhutan Airlines flight to PBH (see §4 for routing) — **the two families fly in separately and meet at Paro airport**, Bhavin's via Kolkata, Pradeep's via Bagdogra. No need to travel together beforehand; Paro is the natural meeting point. The descent into Paro is one of the great landings in aviation — get **left-side window seats** for Everest, Kanchenjunga and Jomolhari on a clear morning; Tutun is old enough to really appreciate this.
 
 Arrive late morning. Deliberately easy afternoon to let everyone adjust to altitude:
 - **Kyichu Lhakhang** — 7th century, one of the oldest temples in Bhutan, tiny and atmospheric
@@ -142,8 +142,8 @@ A genuinely free day, and the cheapest one on the trip — no must-see items, no
 
 *Overnight: Paro*
 
-### Day 10 — Thu 25 Mar · Paro → Delhi/Kolkata → Vadodara
-Morning PBH flight, connect home. Home by evening.
+### Day 10 — Thu 25 Mar · Paro → home
+Morning PBH flight, connect home. **Both families fly out via Kolkata this time** (see §4 — the Bagdogra route only operates Mon/Fri, so it doesn't work for a Thursday departure), meaning everyone can plausibly be on the same PBH→CCU flight even though they arrived separately. Home by evening.
 
 ---
 
@@ -176,25 +176,46 @@ You're travelling as **regional tourists**, which is a completely different — 
 
 ---
 
-## 4. Getting there — routing from Vadodara
+## 4. Getting there — two starting points, one meeting point
+
+Pradeep's family starts from Kolkata, not Vadodara — so the two families don't need to travel together to get to Bhutan at all. Each takes its own best route and they converge in Paro on Day 1.
+
+### Bhavin's family — from Vadodara
 
 There's no direct anything from Vadodara. Three realistic shapes:
 
-### Option A — via Kolkata ✈️ *(recommended for this budget-friendly plan)*
+**Option A — via Kolkata ✈️ *(recommended for this budget-friendly plan)***
 BDQ → CCU → PBH. Drukair and Bhutan Airlines fly Kolkata–Paro **daily**, only 1h20m.
 **~₹26,000–32,000 per person return.** Saves roughly **₹30,000 across the group** versus the Delhi routing below, for one extra domestic layover — a good trade when the goal is to keep costs down over 9 nights.
 
-### Option B — via Delhi ✈️ *(more comfortable, costs more)*
+**Option B — via Delhi ✈️ *(more comfortable, costs more)***
 BDQ → DEL → PBH. Drukair flies Delhi–Paro **5× weekly**; Bhutan Airlines also serves the route. ~2h10m on the Paro leg.
 **~₹30,000–38,000 per person return.** Fewest moving parts, marginally easier connections — worth it only if the extra ₹30,000 isn't the deciding factor.
 
-### Option C — overland via Phuentsholing 🚗
-Fly to **Bagdogra (IXB)**, road to Jaigaon/Phuentsholing (~4 hrs), then Phuentsholing → Thimphu (~6 hrs of mountain switchbacks).
+**Option C — overland via Phuentsholing 🚗**
+Fly to Bagdogra (IXB), road to Jaigaon/Phuentsholing (~4 hrs), then Phuentsholing → Thimphu (~6 hrs of mountain switchbacks).
 **~₹18,000–24,000 per person** for the flights — the cheapest on paper, and Phuentsholing itself is SDF-free for the first 24 hours. **But it adds a full day each way and 10 hours of winding road with two carsick children.** With 9 nights already comfortably budget-friendly via Kolkata, this isn't worth the extra two travel days. Skip it.
+
+### Pradeep's family — from Kolkata, via Bagdogra
+
+Anandita's plan: Kolkata → **New Jalpaiguri (NJP)** by overnight train (this is a well-served route — several trains run it nightly, roughly 9–10 hrs) → taxi ~17–19 km to **Bagdogra Airport (IXB)** → Drukair flight IXB→PBH.
+
+This is a real, existing route — Drukair does fly Bagdogra–Paro (a useful gateway for the North Bengal/Siliguri/Darjeeling/Sikkim region) — but on a **thin schedule that needs checking against the exact travel dates**:
+- **Outbound (Bagdogra→Paro): Tuesdays and Saturdays only.** Day 1 of this itinerary is Tuesday 16 March — that lines up.
+- **Return (Paro→Bagdogra): Mondays and Fridays only.** Day 10 (25 March) is a Thursday — that does **not** line up.
+- Flight time ~50 min. Indicative fares (confirm with operator/Drukair — this is a thinner, less-published route than Kolkata or Delhi): one-way adult ~USD 130, child ~USD 105; round trip adult ~USD 240, child ~USD 190.
+
+**The fix for the return-day mismatch:** Pradeep's family flies home via **Kolkata instead** (PBH→CCU, daily, no schedule conflict) rather than trying to force a symmetric Bagdogra return. Convenient side effect: on the way home, both families could end up on the *same* PBH→CCU flight, even though they flew in separately.
+
+### So — what's the natural meeting point? Not Bagdogra.
+
+**Paro.** There's no need for the two families to physically converge before Bhutan — Bagdogra is simply Pradeep's family's own route to a Bhutan-bound flight, the same way Kolkata is Bhavin's. Both land at Paro airport on the morning of Day 1 (Tuesday 16 March) and the itinerary starts together from there, exactly as already planned. Routing Bhavin's family via Bagdogra too would only add an extra domestic hop (BDQ→CCU→IXB→PBH instead of BDQ→CCU→PBH) for no real benefit, since the Kolkata route already gets them to Paro directly, daily, with no Tuesday/Saturday constraint.
+
+**If Anandita would rather skip the NJP/Bagdogra leg entirely:** the simplest alternative is for Pradeep's family to fly Kolkata→Paro directly alongside Bhavin's family (same daily route, no schedule risk) — genuinely the lowest-friction option if the overnight train isn't specifically preferred for cost or comfort reasons. Worth asking her directly why Bagdogra over a direct Kolkata flight, since it changes the recommendation.
 
 **Baggage:** Drukair economy is generous — 30 kg checked plus 5 kg cabin.
 
-**Booking:** Drukair releases schedules 3–6 months out, so **March 2027 flights will open around October–December 2026.** Load factors spike for the tshechu — book the moment schedules open, especially on the cheaper Kolkata route where seats go fastest.
+**Booking:** Drukair releases schedules 3–6 months out, so **March 2027 flights will open around October–December 2026.** Load factors spike for the tshechu — book the moment schedules open. The Bagdogra route especially, since twice-weekly flights sell out faster than daily ones.
 
 ---
 
@@ -209,7 +230,7 @@ Fly to **Bagdogra (IXB)**, road to Jaigaon/Phuentsholing (~4 hrs), then Phuentsh
 
 | Line item | Basis | Group total (₹) |
 |---|---|---|
-| International + domestic flights | via Kolkata, 6 pax | 1,56,000 – 1,92,000 |
+| International + domestic flights | Bhavin's family via Kolkata (RT); Pradeep's family via Bagdogra out / Kolkata back — see §4 | 1,56,000 – 1,92,000 |
 | **SDF** | 4 adults × ₹1,200 × 9 + Tutun × ₹600 × 9 + Ekansh free | **48,600** |
 | Hotels | 2 triple/family rooms × 9 nights @ ₹3,500–5,000 (Phobjikha nights cheaper than Paro/Thimphu) | 63,000 – 90,000 |
 | Vehicle + driver + fuel | 10 days @ ₹5,500–7,000 | 55,000 – 70,000 |
@@ -222,7 +243,7 @@ Fly to **Bagdogra (IXB)**, road to Jaigaon/Phuentsholing (~4 hrs), then Phuentsh
 | **TOTAL** | | **₹4,15,600 – 5,35,600** |
 | **Per person** | | **₹69,300 – 89,300** |
 
-**That's lower per person than a bare 7-night trip** (₹74,000–98,500 pp in the earlier draft) despite two extra nights — the routing, hotel tier and trimmed extras more than absorb the added days.
+**That's lower per person than a bare 7-night trip** (₹74,000–98,500 pp in the earlier draft) despite two extra nights — the routing, hotel tier and trimmed extras more than absorb the added days. The flight total is a blend of two different routes now (§4) rather than one shared Kolkata fare for all six — it happens to land in roughly the same range, but confirm both legs, especially the thinner Bagdogra sector, once real fares are quoted.
 
 **More levers if you want to push it lower still:**
 - Drop the hot stone bath entirely → saves ~₹8,000 group
@@ -247,7 +268,7 @@ You have good runway. Here's the order of operations:
 | **Now (Aug–Sep 2026)** | Passports for all six, including Ekansh and Tutun. Shortlist 3–4 licensed Bhutanese operators and get quotes for 16–25 March 2027, specifying the budget tier of hotel |
 | **Sep–Oct 2026** | **Official 2027 festival calendar publishes.** Confirm the Paro Tshechu dates before committing to anything non-refundable |
 | **Oct–Nov 2026** | **Book Paro hotels.** This is the binding constraint — Paro has limited certified rooms and they fill 4–6 months ahead for the tshechu. Book Thimphu, Punakha and Phobjikha at the same time |
-| **Nov 2026 – Jan 2027** | Book Drukair/Bhutan Airlines Kolkata–Paro as soon as the schedule loads. Book BDQ–CCU domestic legs |
+| **Nov 2026 – Jan 2027** | Book Drukair/Bhutan Airlines Kolkata–Paro as soon as the schedule loads. Book BDQ–CCU domestic legs for Bhavin's family. **Book the Bagdogra–Paro leg early** for Pradeep's family — it's twice-weekly, so seats go fast, and lock in their Kolkata return leg too |
 | **Jan 2027** | Confirm operator, guide, vehicle. Pay deposits |
 | **Feb 2027** | Apply for Entry Permits via the operator or immi.gov.bt. Travel insurance. Any kid-specific meds |
 | **Early Mar 2027** | Re-confirm festival dates and flight times. Print all permits and bookings |
@@ -338,7 +359,9 @@ Mornings are clear, afternoons often cloud over. Occasional rain by late March. 
 
 - [ ] Confirm Paro Tshechu dates against the official calendar (Sep–Oct 2026)
 - [ ] Confirm Talo Tshechu dates — single-source at present
-- [ ] Confirm Kolkata vs Delhi routing once actual fares are quoted
+- [ ] Confirm Kolkata vs Delhi routing once actual fares are quoted (Bhavin's family)
+- [ ] Confirm Bagdogra–Paro schedule/fares directly with Drukair for Pradeep's family — outbound Tue/Sat and return Mon/Fri are provisional, single-source figures
+- [ ] Decide: does Pradeep's family stick with the Kolkata→NJP→Bagdogra route, or fly Kolkata→Paro directly like Bhavin's family (simpler, no schedule constraint) — worth asking Anandita why Bagdogra specifically
 - [ ] Get 3–4 operator quotes, specifying budget-tier certified hotels including in Phobjikha, and compare what's actually included
 - [ ] Decide who takes Ekansh at Tiger's Nest (turn back at the cafeteria, or sit the day out) once you're closer to the date and know his energy levels
 - [ ] Book the hot stone bath in advance for Day 9 if keeping it in
